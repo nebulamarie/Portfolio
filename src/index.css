@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.error{
+  color: blue;
+  font-size: 10px
+}
+
+.home{
+  background-color: black;
+}
+
+.Navbar{
+  background-color: blue;
+}
+.Root{
+  background-color: rgb(43, 226, 122);
+
+}

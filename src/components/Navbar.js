@@ -33,7 +33,7 @@ export default function Navbar() {
                     console.log(e.target.value);
                 }}
                 />
-                <Link to ={`/user/${searchQuery}`}>Search</Link>
+                <Link to ={`/user/${searchQuery}`}>Submit</Link>
             </li>
         </ul>
     );   

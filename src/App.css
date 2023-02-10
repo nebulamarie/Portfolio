@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.error{
+  color: blue;
+  font-size: 10px
+}
+
+.home{
+  background-color: black;
+
+}
+
+.Navbar{
+  background-color: blue;
+}

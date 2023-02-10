@@ -1,13 +1,24 @@
+import React from 'react'
+import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter, RouterProvider,
+}from "react-router-dom";
+import "./index.css";
 import './App.css';
+import ErrorPage from "./components/Error";
+import Root from './routes/Root';
 
-export default function App(){
-  return (
-    <div className="App">
-      <div className="home-image">
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+  },
+]);
 
-      </div>
-    </div>
-
-  )
-}
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
 
