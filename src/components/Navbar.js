@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <ul className="nav">
             <li>
-                <Link to={'/'}>Home</Link>
+                <Link to={'/home'}>Home</Link>
             </li>
             <li>
                 <Link to={'/about'}>About</Link>
@@ -19,21 +19,6 @@ export default function Navbar() {
             </li>
             <li>
                 <Link to={'/contact'}>Contact</Link>
-            </li>
-            <li>
-                <input
-                placeholder="enter email"
-                onChange={ (e) =>{
-                    setSearchQuery(e.target.value);
-                    console.log(e.target.value);
-                }}
-                Message ="Message:"
-                onClick={ (e) =>{
-                    setSearchQuery(e.target.value);
-                    console.log(e.target.value);
-                }}
-                />
-                <Link to ={`/user/${searchQuery}`}>Submit</Link>
             </li>
         </ul>
     );   

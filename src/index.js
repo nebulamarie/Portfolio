@@ -14,27 +14,31 @@ import Projects from './routes/Projects';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />
-  },
-  {
-    path: "/home",
-    element:<Home />
-  },
-  {
-    path: "/about",
-    element: <About />
-  },
-  {
-    path: "/work",
-    element: <Work />
-  },
-  { path: "/projects",
-    element: <Projects />
-  },
-  {
-    path: "/contact",
-    element: <Contact /> 
+    element: <Root />,
+    children: [
+      {
+        path: "/home",
+        element:<Home />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/work",
+        element: <Work />
+      },
+      
+      { path: "/projects",
+        element: <Projects />
+      },
+      {
+        path: "/contact",
+        element: <Contact /> 
+      }
+    ]
   }
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
