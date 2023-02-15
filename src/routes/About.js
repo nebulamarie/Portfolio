@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import headshot from '../images/headshot.jpg'
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
         <nav className='Aboutnav'>
              <img src={headshot}/>
         </nav>
-        <article>
+        <article className='Aboutbio'>
           <p>Marie is a professional with an extensive background in Vendor Management and Account Management.</p>
             <p>Her skills include:
               <ul>
@@ -21,12 +22,13 @@ export default function About() {
                 <li>KPI's</li>
                 <li>Solution focused negotiations</li>
                 </ul>
+                <p> A recent transplant into the tech world, she is developing her skills as a full stack developer, including Javascript, HTML, CSS, React.</p>
           </p>
         </article>
       </section>
 
       <footer className='Aboutfooter'>
-        <p>Home</p>
+        <p><Link to={'/home'}>Home</Link></p>
       </footer>
     </div>
   );
